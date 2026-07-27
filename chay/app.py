@@ -9,7 +9,8 @@ st.title("🤖 チャット先生（個別指導アシスタント）")
 
 # APIキーの入力
 default_api_key = os.environ.get("OPENAI_API_KEY", "")
-api_key = "sk-proj-CZdxqgcPQ01dBHOZ_yZkmsyapuy0fUJ_KFYR823VmzQEszwjvUqc9hfQqYCaF0QDdRWRBZ6tT3BlbkFjGgNITGatnefQLITnypHb6ry..."
+# Secretsから正しくAPIキーを読み込む
+api_key = st.secrets.get("OPENAI_API_KEY", "")
 
 if not api_key:
     st.warning("サイドバーにOpenAIのAPIキーを入力してください。(sk-...から始まるキー)")
