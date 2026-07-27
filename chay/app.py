@@ -88,5 +88,5 @@ if len(st.session_state.messages) > 1 and st.session_state.messages[-1]["role"] 
                 st.markdown(answer)
                 st.session_state.messages.append({"role": "assistant", "content": answer})
             except Exception as e:
-                st.error(f"エラーが発生しました: {e}")import base64
+                st.error(f"エラーが発生しました: {e}")
 
