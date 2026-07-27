@@ -15,7 +15,7 @@ if not api_key:
     st.stop()
 
 client = OpenAI(api_key=api_key)
-model_name = "gpt-4o"
+model_name = "gpt-4omini"
 
 # 生徒目線の対話型プロンプト
 system_prompt = """
